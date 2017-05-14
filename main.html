@@ -28,16 +28,29 @@
   <nav style="background-color:#4285f4" class="nav-extended">
 
     <div class="nav-wrapper">
+  <a href="#" data-activates="slide-out" class="fixed button-collapse"><i class="material-icons">menu</i></a>
+ 
 
-      <a href="#!" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
-      <i class="small material-icons">menu</i>
-      </a>
+  <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>       
 
 
-
-
-
-
+<ul
+  <a href="#" data-activates="slide-out" type="button" class="fixed button-collapse"><i class="material-icons">menu</i></a>
+</ul>
       
       <ul class="right hide-on-med-and-down">
        
@@ -59,28 +72,6 @@
   
 
  <!-- Side nav-->
-<ul id="slide-out" class="side-nav">
-    <li><div class="userView">
-      <div class="background">
-      
-      </div>
-      
-    </div></li>
-    
-    <li class="search">
-     <div class="search-wrapper-card">
-       <input id="search">
-       <i class="material-icons">search</i>
-       <div class="search-results"></div>
-       </
-
-     </div>
-
-    <li><a class="subheader">Allot</a></li>
-    <li><a class="waves-effect" href="settings.html">Settings</a></li>
-  </ul>
-  
-  
 
 
 
@@ -137,6 +128,7 @@
   </script>
   
   <script src="js/materialize.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
