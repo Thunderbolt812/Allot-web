@@ -1,136 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="description" content="Allot">
-    <title>Allot</title>
-
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-
-    <!-- CSS-->
-    <link href="css/materialize.css" rel="stylesheet">
-    <link href="css/materialize.min.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Top Nav bar-->
-  <nav style="background-color:#4285f4" class="nav-extended">
-
-    <div class="nav-wrapper">
-  <a href="#" data-activates="slide-out" class="fixed button-collapse"><i class="material-icons">menu</i></a>
- 
-
-  <ul id="slide-out" class="side-nav">
-    <li><div class="userView">
-      <div class="background">
-        <img src="images/office.jpg">
-      </div>
-      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#!name"><span class="white-text name">John Doe</span></a>
-      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>       
-
-
-<ul
-  <a href="#" data-activates="slide-out" type="button" class="fixed button-collapse"><i class="material-icons">menu</i></a>
-</ul>
-      
-      <ul class="right hide-on-med-and-down">
-       
-        <li><a href="popup.html"><i title="3 new notifications" class="material-icons">notifications</i></a></li>
-        
-        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-        
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-
-
-
-
-        </ul>
-    </div>
-  </nav>
-
-
-    
-  
-
- <!-- Side nav-->
-
-
-
-
-
-  <!-- Initial post message -->
-    <div class="row">
-      <div class="col s12 m5">
-                <form class="card-panel" method="#" action="/php/login.php">
-          <span class="grey-text">Send homework to class here.</span>
-        </div>
-      </div>
-
-  <!--Tap target prompt-->
-
-
-
-
-
-
-<!--FAB-->
-
-<div class="fixed-action-btn" style="bottom: 24px; right: 24px;" id="fab">
-          <a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
-            <i class="material-icons">mode_edit</i>
-          </a>
-          
-          <ul>
-          <li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
-
-            <li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
-
-            <li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
-
-            <li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
-
-
-          </ul>
-        </div>
-
-  
-   
- 
-
-
-  <!--  Scripts -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script>// Show sideNav
-  $('.button-collapse').sideNav('show');
-  // Hide sideNav
-  $('.button-collapse').sideNav('hide');
-  // Destroy sideNav
-  $('.button-collapse').sideNav('destroy');
-  </script>
-  
-  <script src="js/materialize.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
-
- </html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="description" content="Allot">
+		<title>Allot</title>
+		<!-- Favicons-->
+		<link rel="shortcut icon" href="images/favicon.png">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+		<!-- CSS-->
+		<link href="css/materialize.css" rel="stylesheet">
+		<link href="css/materialize.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Top Nav bar-->
+		<nav style="background-color:#4285f4" class="nav-extended">
+			<div class="nav-wrapper">
+				<a href="#" data-activates="slide-out" class="fixed button-collapse"><i class="material-icons">menu</i></a>
+				
+				<ul id="slide-out" class="side-nav">
+					<li><div class="userView">
+						<div class="background">
+							<img src="images/office.jpg">
+						</div>
+						<a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+						<a href="#!name"><span class="white-text name">John Doe</span></a>
+						<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+					</div></li>
+					<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+					<li><a href="#!">Second Link</a></li>
+					<li><div class="divider"></div></li>
+					<li><a class="subheader">Subheader</a></li>
+					<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+				</ul>
+				<ul
+					<a href="#" data-activates="slide-out" type="button" class="fixed button-collapse"><i class="material-icons">menu</i></a>
+				</ul>
+				
+				<ul class="right hide-on-med-and-down">
+					
+					<li><a href="popup.html"><i title="3 new notifications" class="material-icons">notifications</i></a></li>
+					
+					<li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+					
+					<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		
+		<!-- Side nav-->
+		<!-- Initial post message -->
+		<div class="row">
+			<div class="col s12 m5">
+				<form class="card-panel" method="#" action="/php/login.php">
+					<span class="grey-text">Send homework to class here.</span>
+				</div>
+			</div>
+			<!--Tap target prompt-->
+			<!--FAB-->
+			<div class="fixed-action-btn" style="bottom: 24px; right: 24px;" id="fab">
+				<a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
+					<i class="material-icons">mode_edit</i>
+				</a>
+				
+				<ul>
+					<li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
+					<li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
+					<li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
+					<li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
+				</ul>
+			</div>
+			
+			
+			
+			<!--  Scripts -->
+			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+			<script>// Show sideNav
+			$('.button-collapse').sideNav('show');
+			// Hide sideNav
+			$('.button-collapse').sideNav('hide');
+			// Destroy sideNav
+			$('.button-collapse').sideNav('destroy');
+			</script>
+			
+			<script src="js/materialize.js"></script>
+			<script src="js/materialize.min.js"></script>
+			<script src="js/init.js"></script>
+		</body>
+	</html>
