@@ -1,6 +1,7 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  cursor:pointer;
 }
 
 p {
@@ -46,4 +47,10 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+
+.nav-wrapper{
+  padding: 5px;
+
 }
