@@ -19,11 +19,15 @@
     <link href="css/asset.css" rel="stylesheet">
   </head>
   <body>
-    <style type="text/css">
-    ::-webkit-scrollbar {
-    display: none;
+
+  <style type="text/css">
+    .pointer{ 
+      cursor: pointer; 
     }
-    </style>
+::-webkit-scrollbar { 
+    display: none; 
+}
+  </style>
     <!-- Top Nav bar-->
     <nav style="background-color:#4285f4" class="nav-extended">
       <div class="nav-wrapper">
@@ -55,22 +59,20 @@
             <!-- error with search bar click on icon to see-->
             <li><a href="search.html" data-activates='dropdown1'><i class="material-icons">search</i></a></li>
             
-            <li><a href="#" data-activates="dropdown1"><i class="material-icons">more_vert</i></a></li>
+            <li><a href="#" data-activates="dropdown1"><i class="material-icons dropdown-button pointer" type="button" data-activates='dropdown1' >more_vert</i></a></li>
             
           </ul>
         </div>
       </nav>
-      <!-- Dropdown Structure -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-      </ul>
-      
-      
+    <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
       
       
       
