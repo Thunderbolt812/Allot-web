@@ -1,339 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="description" content="Allot">
-    <title>Allot</title>
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="images/favicon.png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-    <!-- CSS-->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/asset.css" rel="stylesheet">
-  </head>
-  <body>
-    <style type="text/css">
-    .pointer{
-    cursor: pointer;
-    }
-    ::-webkit-scrollbar {
-    display: none;
-    }
-    </style>
-    <!-- Top Nav bar-->
-    <nav style="background-color:#4285f4" class="nav-extended">
-      <div class="nav-wrapper">
-        <!-- Side nav-->
-        <ul id="slide-out" class="side-nav">
-          <li><div class="userView">
-            <div class="background">
-              <img src="images/office.jpg">
-            </div>
-            
-            <li><a class="waves-effect" href="#"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li><div class="divider"></div></li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-          </ul>
-          <ul
-            <a href="#" data-activates="slide-out" type="button" class="fixed button-collapse pointer" title="Navigation bar"><i class="material-icons">menu</i></a>
-          </ul>
-          <a href="main.html" style="font-family: 'Product Sans', Arial, sans-serif; font-size: 1.3rem;">Dashboard</a>
-          
-          <!-- Top nav bar right-->
-          <ul class="right hide-on-med-and-down">
-            <li><a href="popup.html"><i title="3 new notifications" class="material-icons">notifications</i></a></li>
-            
-            
-            <!-- error with search bar click on icon to see-->
-            <li><a href="search.html" data-activates='dropdown1'><i class="material-icons">search</i></a></li>
-            
-            <li><a href="#" data-activates="dropdown1"><i class="material-icons dropdown-button pointer" type="button" data-activates='dropdown1' >more_vert</i></a></li>
-            
-          </ul>
-        </div>
-      </nav>
-      <!-- Dropdown Structure -->
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-      </ul>
-      
-      
-      
-      <!-- Initial post message -->
-      <div class="row">
-        <div class="col s9 m5">
-          <div class="card white darken-1">
-            <div class="card-content black-text">
-              <span class="card-title">Messages</span>
-              
-              
-            </div>
-            <div class="card-action">
-              <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <textarea placeholder="Post a new message"id="textarea1" class="materialize-textarea"></textarea>
-                      <button class="btn waves-effect waves-light" type="submit" name="submit" style="background-color:#4285f4">Post
-                      <i class="material-icons right">send</i>
-                      </button>
-                      
-                      
-                      
-                    </div>
-                  </div>
-                </form>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-
-      <!--Tap target prompt-->
-      <!--FAB-->
-      <div class="fixed-action-btn" data-target="modal1" style="bottom: 17px; right: 17px;" id="fab">
-        <a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
-          <i class="material-icons">mode_edit</i>
-        </a>
-        
-        <ul>
-          <li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
-          <li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
-          <li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
-        </ul>
-      </div>
-     
-
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-         
-         <div class="row" style="background-color:#4285f4">
-        <div class="col s3 m5">
-          <div class="card white darken-1">
-            <div class="card-content black-text">
-              <span class="card-title">New homework:</span> 
-              </div>
-              </div> 
-              </div>
-              </div>        
-
-
-
-              <p>
-
-              
-              
-              <form>
-                
-                
-                
-                <!-- Modal info -->
-
-                <label>Select 1 or multiple classes to sent to</label>
-                <select class="browser-default">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="2P1">2P1</option>
-                  <option value="2P2">2P2</option>
-                  <option value="2P3">2P3</option>
-                </select>
-                <label>Select subject</label>
-                <select class="browser-default">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="English">English</option>
-                  <option value="Math ">Math</option>
-                  <option value="Chinese">Chinese</option>
-                  <option value="Science">Science</option>
-                </select>
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Input homework title:</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Input instructions for homework here:</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <ul class="collapsible" data-collapsible="accordion">
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Homework deadline</div>
-                    <div class="collapsible-body"><span>
-                      <form action="#">
-                        <p>
-                          <input class="with-gap" name="tomorrow" type="radio" id="tomorrow" />
-                          <label for="tomorrow">Tomorrow</label>
-                        </p>
-                        <p>
-                          <input class="with-gap" name="twoday" type="radio" id="twoday" />
-                          <label for="twoday">Day after tomorrow</label>
-                        </p>
-                        <p>
-                          <input class="with-gap" name="1week" type="radio" id="1week" />
-                          <label for="1week">One week later</label>
-                        </p>
-                        <p>
-                          <label for="date"></label>
-                          <input  placeholder="Custom date" type="date" class="datepicker">
-                        </p>
-                        
-                        
-                      </form>
-                      
-                    </li>
-                    
-                  </ul>
-                  <ul class="collapsible" data-collapsible="accordion" class="blue">
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Difficulty of homework</div>
-                      <div class="collapsible-body"><span>
-                        
-                        
-                        <form action="#">
-                          <label for="form">Select the difficlty of the homework</label>
-                          <p>
-                            <input class="with-gap" name="1" type="radio" id="1"  />
-                            <label for="1">1</label>
-                          </p>
-                          
-                          <input class="with-gap" name="2" type="radio" id="2"  />
-                          <label for="2">2</label>
-                        </p>
-                        
-                        <p>
-                          <input class="with-gap" name="3" type="radio" id="3"  />
-                          <label for="3">3</label>
-                        </p>
-                        
-                        <p>
-                          <input class="with-gap" name="4" type="radio" id="4"  />
-                          <label for="4">4</label>
-                        </p>
-                        <p>
-                          <input class="with-gap" name="5" type="radio" id="5"  />
-                          <label for="5">5</label>
-                        </p>
-                      </span></div>
-                    </li>
-                  </form>
-                </ul>
-                
-                <form action="#">
-                  <div class="file-field input-field">
-                    <div class="btn" style="background-color:#4285f4">
-                      <span>File</span>
-                      <input type="file" multiple>
-                    </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path validate" type="text" placeholder="Upload attachment">
-                    </div>
-                  </div>
-                </form>
-                </form>
-            </p>
-        </div>
-        
-
-        <div class="modal-footer">
-        <button href="#"class=" modal-action modal-close btn waves-effect waves-light" type="submit" name="action" style="background-color:#4285f4">Submit
-                <i class="material-icons right">send</i>
-                </button>
-          
-        </div>
-      </div>
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--  Javascript initialisation -->
-      <script src="js/main.js"></script>
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="js/animation.js"></script>
-      <script src="js/forms.js"></script>
-      <script src="js/modal.js"></script>
-      <script src="js/slider.js"></script>
-      <script src="js/assets.js"></script>
-      <script src="js/global.js"></script>
-      <script src="js/tabs.js"></script>
-      <script src="js/buttons.js"></script>
-      <script src="js/hammer.min.js"></script>
-      <script src="js/parallax.js"></script>
-      <script src="js/tapTarget.js"></script>
-      <script src="js/cards.js"></script>
-      <script src="js/initial.js"></script>
-      <script src="js/picker.date.js"></script>
-      <script src="js/toasts.js"></script>
-      <script src="js/carousel.js"></script>
-      <script src="js/init.js"></script>
-      <script src="js/picker.js"></script>
-      <script src="js/tooltip.js"></script>
-      <script src="js/character_counter.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/prism.js"></script>
-      <script src="js/transitions.js"></script>
-      <script src="js/chips.js"></script>
-      <script src="js/jquery.hammer.js"></script>
-      <script src="js/pushpin.js"></script>
-      <script src="js/velocity.min.js"></script>
-      <script src="js/collapsible.js"></script>
-      <script src="js/jquery.timeago.min.js"></script>
-      <script src="js/scrollFire.js"></script>
-      <script src="js/waves.js"></script>
-      <script src="js/datepicker.js"></script>
-      <script src="js/scrollspy.js"></script>
-      <script src="js/materialbox.js"></script>
-      <script src="js/sideNav.js"></script>
-      <script src="js/dropdown.js"></script>
-    </body>
-  </html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="description" content="Allot">
+		<title>Allot</title>
+		<!-- Favicons-->
+		<link rel="shortcut icon" href="images/favicon.png">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+		<!-- CSS-->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/asset.css" rel="stylesheet">
+	</head>
+	<body>
+		<style type="text/css">
+		.pointer{
+		cursor: pointer;
+		}
+		::-webkit-scrollbar {
+		display: none;
+		}
+		</style>
+		<!-- Top Nav bar-->
+		<nav style="background-color:#4285f4" class="nav-extended">
+			<div class="nav-wrapper">
+				<!-- Side nav-->
+				<ul id="slide-out" class="side-nav">
+					<li><div class="userView">
+						<div class="background">
+							<img src="images/office.jpg">
+						</div>
+						
+						<li><a class="waves-effect" href="#"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+						<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+						<li><a href="#!">Second Link</a></li>
+						<li><div class="divider"></div></li>
+						<li><a class="subheader">Subheader</a></li>
+						<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+					</ul>
+					<ul
+						<a href="#" data-activates="slide-out" type="button" class="fixed button-collapse pointer" title="Navigation bar"><i class="material-icons">menu</i></a>
+					</ul>
+					<a href="main.html" style="font-family: 'Product Sans', Arial, sans-serif; font-size: 1.3rem;">Dashboard</a>
+					
+					<!-- Top nav bar right-->
+					<ul class="right hide-on-med-and-down">
+						<li><a href="popup.html"><i title="3 new notifications" class="material-icons">notifications</i></a></li>
+						
+						
+						<!-- error with search bar click on icon to see-->
+						<li><a href="search.html" data-activates='dropdown1'><i class="material-icons" title="Search">search</i></a></li>
+						
+						<li><a href="#" data-activates="dropdown1"><i class="material-icons dropdown-button pointer" type="button" data-activates='dropdown1' title="More options">more_vert</i></a></li>
+						
+					</ul>
+				</div>
+			</nav>
+			<!-- Dropdown Structure -->
+			<ul id='dropdown1' class='dropdown-content'>
+				<li><a href="#!">one</a></li>
+				<li><a href="#!">two</a></li>
+				<li class="divider"></li>
+				<li><a href="#!">three</a></li>
+				<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+				<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+			</ul>
+			
+			
+			
+			<!-- Initial post message -->
+			<div class="row">
+				<div class="col s9 m5">
+					<div class="card white darken-1">
+						<div class="card-content black-text">
+							<span class="card-title">Messages</span>
+							
+							
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea placeholder="Post a new message"id="textarea1" class="materialize-textarea"></textarea>
+											<button class="btn waves-effect waves-light" type="submit" name="submit" style="background-color:#4285f4">Post
+											<i class="material-icons right">send</i>
+											</button>
+											
+											
+											
+										</div>
+									</div>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--Tap target prompt-->
+			<!--FAB-->
+			<div class="fixed-action-btn" data-target="modal1" style="bottom: 17px; right: 17px;" id="fab">
+				<a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
+					<i class="material-icons">mode_edit</i>
+				</a>
+				
+				<ul>
+					<li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
+					<li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
+					<li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
+					<li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
+				</ul>
+			</div>
+			
+			<!-- Modal Structure -->
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					
+					<div class="row" style="background-color:#4285f4">
+						<div class="col s3 m5">
+							<div class="card white darken-1">
+								<div class="card-content black-text">
+									<span class="card-title">New homework:</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>
+						
+						
+						<form>
+							
+							
+							
+							<!-- Modal info -->
+							<label>Select 1 or multiple classes to sent to</label>
+							<select class="browser-default">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="2P1">2P1</option>
+								<option value="2P2">2P2</option>
+								<option value="2P3">2P3</option>
+							</select>
+							<label>Select subject</label>
+							<select class="browser-default">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="English">English</option>
+								<option value="Math ">Math</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Science">Science</option>
+							</select>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Input homework title:</label>
+										</div>
+									</div>
+								</form>
+							</div>
+							
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Input instructions for homework here:</label>
+										</div>
+									</div>
+								</form>
+							</div>
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">filter_drama</i>Homework deadline</div>
+									<div class="collapsible-body"><span>
+										<form action="#">
+											<p>
+												<input class="with-gap" name="tomorrow" type="radio" id="tomorrow" />
+												<label for="tomorrow">Tomorrow</label>
+											</p>
+											<p>
+												<input class="with-gap" name="twoday" type="radio" id="twoday" />
+												<label for="twoday">Day after tomorrow</label>
+											</p>
+											<p>
+												<input class="with-gap" name="1week" type="radio" id="1week" />
+												<label for="1week">One week later</label>
+											</p>
+											<p>
+												<label for="date"></label>
+												<input  placeholder="Custom date" type="date" class="datepicker">
+											</p>
+											
+											
+										</form>
+										
+									</li>
+									
+								</ul>
+								<ul class="collapsible" data-collapsible="accordion" class="blue">
+									<li>
+										<div class="collapsible-header"><i class="material-icons">filter_drama</i>Difficulty of homework</div>
+										<div class="collapsible-body"><span>
+											
+											
+											<form action="#">
+												<label for="form">Select the difficlty of the homework</label>
+												<p>
+													<input class="with-gap" name="1" type="radio" id="1"  />
+													<label for="1">1</label>
+												</p>
+												
+												<input class="with-gap" name="2" type="radio" id="2"  />
+												<label for="2">2</label>
+											</p>
+											
+											<p>
+												<input class="with-gap" name="3" type="radio" id="3"  />
+												<label for="3">3</label>
+											</p>
+											
+											<p>
+												<input class="with-gap" name="4" type="radio" id="4"  />
+												<label for="4">4</label>
+											</p>
+											<p>
+												<input class="with-gap" name="5" type="radio" id="5"  />
+												<label for="5">5</label>
+											</p>
+										</span></div>
+									</li>
+								</form>
+							</ul>
+							
+							<form action="#">
+								<div class="file-field input-field">
+									<div class="btn" style="background-color:#4285f4">
+										<span>File</span>
+										<input type="file" multiple>
+									</div>
+									<div class="file-path-wrapper">
+										<input class="file-path validate" type="text" placeholder="Upload attachment">
+									</div>
+								</div>
+							</form>
+						</form>
+					</p>
+				</div>
+				
+				<div class="modal-footer">
+					<button href="#"class=" modal-action modal-close btn waves-effect waves-light" type="submit" name="action" style="background-color:#4285f4">Submit
+					<i class="material-icons right">send</i>
+					</button>
+					
+				</div>
+			</div>
+			
+			
+			<!--  Javascript initialisation -->
+			<script src="js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+			<script src="js/animation.js"></script>
+			<script src="js/forms.js"></script>
+			<script src="js/modal.js"></script>
+			<script src="js/slider.js"></script>
+			<script src="js/assets.js"></script>
+			<script src="js/global.js"></script>
+			<script src="js/tabs.js"></script>
+			<script src="js/buttons.js"></script>
+			<script src="js/hammer.min.js"></script>
+			<script src="js/parallax.js"></script>
+			<script src="js/tapTarget.js"></script>
+			<script src="js/cards.js"></script>
+			<script src="js/initial.js"></script>
+			<script src="js/picker.date.js"></script>
+			<script src="js/toasts.js"></script>
+			<script src="js/carousel.js"></script>
+			<script src="js/init.js"></script>
+			<script src="js/picker.js"></script>
+			<script src="js/tooltip.js"></script>
+			<script src="js/character_counter.js"></script>
+			<script src="js/jquery.easing.1.3.js"></script>
+			<script src="js/prism.js"></script>
+			<script src="js/transitions.js"></script>
+			<script src="js/chips.js"></script>
+			<script src="js/jquery.hammer.js"></script>
+			<script src="js/pushpin.js"></script>
+			<script src="js/velocity.min.js"></script>
+			<script src="js/collapsible.js"></script>
+			<script src="js/jquery.timeago.min.js"></script>
+			<script src="js/scrollFire.js"></script>
+			<script src="js/waves.js"></script>
+			<script src="js/datepicker.js"></script>
+			<script src="js/scrollspy.js"></script>
+			<script src="js/materialbox.js"></script>
+			<script src="js/sideNav.js"></script>
+			<script src="js/dropdown.js"></script>
+		</body>
+	</html>
