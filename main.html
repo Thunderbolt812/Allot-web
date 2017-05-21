@@ -106,23 +106,49 @@
       </div>
       
       
-      <!-- Card -->
-      <div class="row">
-        <div class="col s9 m14">
-          <div class="card white darken-5" hoverable>
+
+      <!--Tap target prompt-->
+      <!--FAB-->
+      <div class="fixed-action-btn" data-target="modal1" style="bottom: 17px; right: 17px;" id="fab">
+        <a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
+          <i class="material-icons">mode_edit</i>
+        </a>
+        
+        <ul>
+          <li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
+          <li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
+          <li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
+        </ul>
+      </div>
+     
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+         
+         <div class="row" style="background-color:#4285f4">
+        <div class="col s3 m5">
+          <div class="card white darken-1">
             <div class="card-content black-text">
-              <span class="card-title">New homework:</span>
-              
-              
-            </div>
-            <div class="card-action">
+              <span class="card-title">New homework:</span> 
+              </div>
+              </div> 
+              </div>
+              </div>        
+
+
+
+              <p>
+
               
               
               <form>
                 
                 
                 
-                
+                <!-- Modal info -->
+
                 <label>Select 1 or multiple classes to sent to</label>
                 <select class="browser-default">
                   <option value="" disabled selected>Choose your option</option>
@@ -233,41 +259,43 @@
                     </div>
                   </div>
                 </form>
-                <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:#4285f4">Submit
+                </form>
+            </p>
+        </div>
+        
+
+        <div class="modal-footer">
+        <button href="#"class=" modal-action modal-close btn waves-effect waves-light" type="submit" name="action" style="background-color:#4285f4">Submit
                 <i class="material-icons right">send</i>
                 </button>
-                
-                
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Tap target prompt-->
-      <!--FAB-->
-      <div class="fixed-action-btn" data-target="modal1" style="bottom: 17px; right: 17px;" id="fab">
-        <a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
-          <i class="material-icons">mode_edit</i>
-        </a>
-        
-        <ul>
-          <li><a class="btn-floating red" title="Overview" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
-          <li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
-          <li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
-        </ul>
-      </div>
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          
         </div>
       </div>
       
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!--  Javascript initialisation -->
       <script src="js/main.js"></script>
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
