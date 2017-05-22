@@ -1,1 +1,19 @@
+/*
+############################################################################
+# Copyright 2017 Project Allot                                             #
+#                                                                          #
+# Licensed under the Apache License, Version 2.0 (the "License");          #
+# you may not use this file except in compliance with the License.         #
+# You may obtain a copy of the License at                                  #
+#                                                                          #
+#    http://www.apache.org/licenses/LICENSE-2.0                            #
+#                                                                          #
+# Unless required by applicable law or agreed to in writing, software      #
+# distributed under the License is distributed on an "AS IS" BASIS,        #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. #
+# See the License for the specific language governing permissions and      #
+# limitations under the License.                                           #
+############################################################################
+*/
+
 {"version":3,"sources":["../scss/main.scss","../scss/vendors/_reset.scss","main.css","../scss/base/_variables.scss","../scss/partials/_form.scss"],"names":[],"mappings":"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","file":"main.css"}
