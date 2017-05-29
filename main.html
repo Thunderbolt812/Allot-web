@@ -18,6 +18,39 @@
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/asset.css" rel="stylesheet">
 		<style>
+
+		table {
+    border-collapse: collapse;
+}
+
+ td,th {
+    border: 2px solid white;
+}
+th, td {
+    padding: 15px;
+   
+}
+th {
+    background-color: #4285f4;
+    color: white;
+}
+
+
+td {
+    background-color: #80b4ff;
+    color: white;
+}
+
+#fixedheight {
+    table-layout: fixed;
+}
+
+#fixedheight td {
+    height: 20px;
+    overflow: hidden;
+    width: 25%;
+}
+
 		.pointer{
 		cursor: pointer;
 		}
@@ -28,14 +61,16 @@
 	</head>
 	<body>
 		<!-- Top Nav bar-->
-		<nav style="background-color:#4285f4" class="nav-extended">
+		<nav style="background-color:#4285f4" class="top-nav">
 			<div class="nav-wrapper">
+
+
 				<!-- Side nav-->
 				<ul id="slide-out" class="side-nav">
 					<li><div class="userView">
 						<div class="background">
 							<img src="images/office.jpg">
-						</div>a
+						</div>
 						
 						<li><a class="waves-effect" href="#"><i class="material-icons">cloud</i>First Link With Icon</a></li>
 						<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
@@ -44,10 +79,24 @@
 						<li><a class="subheader">Blank for now</a></li>
 						<li><a class="waves-effect" href="pasthomework.html">View homework given previously</a></li>
 					</ul>
+					
 					<ul
 						<a href="#" data-activates="slide-out" type="button" class="fixed button-collapse pointer" title="Open navigation"><i class="material-icons">menu</i></a>
 					</ul>
-					<a href="main.html" style="font-family: 'Product Sans', Arial, sans-serif; font-size: 1.3rem;">Dashboard</a>
+					
+					<ul>
+					<li><a href="main.html" style="font-family: 'Product Sans', Arial, sans-serif; font-size: 1.3rem;">Dashboard</a></li>
+					<!--NOT WORKING MORGAN PLS CHECK <li class="search">
+					<div class ="search-wrapper card">
+					<input id="search">
+					<i class="material-icons">search</i>
+					
+					</div> -->
+
+
+						
+					</li>
+					</ul>
 					
 					<!-- Top nav bar right-->
 					<ul class="right hide-on-med-and-down">
@@ -71,13 +120,22 @@
 				<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
 				<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
 			</ul>
+
+			<div class="row">
+    <div class="s12 m6 l3 style="background-color:#4285f4">
+    <span class="flow-text">hi</span>
+
+    </div>
+
+
+
 			
 			
        
        <!-- Cards for different classes -->
           <div class="row">
         
-        <div class="col s12 m6 l3" data-target="modal2">
+        <div class="col s12 m6 l3" data-target="modal2P1">
           <div class="horizontal card" style="background-color:#4285f4">
             <div class="card-content white-text">
               <span class="card-title">Homework assigned to 2P1</span>
@@ -90,7 +148,7 @@
         </div>
       </div>
 
-      <div class="col s12 m6 l3" data-target="modal3">
+      <div class="col s12 m6 l3" data-target="modal2P2">
           <div class="horizontal card" style="background-color:#4285f4">
             <div class="card-content white-text">
               <span class="card-title">Homework assigned to 2P2</span>
@@ -101,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m6 l3" data-target="modal4">
+        <div class="col s12 m6 l3" data-target="modal2P3">
           <div class="horizontal card" style="background-color:#4285f4">
             <div class="card-content white-text">
               <span class="card-title">Homework assigned to 2P3</span>
@@ -122,14 +180,7 @@
         </div>
 
 
-
-
-
-
-
-			
-			
-			<!-- Initial post message -->
+<!-- Initial post message -->
 			<div class="row">
 				<div class="col s9 m5">
 					<div class="card white darken-1 z-depth-2">
@@ -163,16 +214,14 @@
 			
 			<!--Tap target prompt-->
 			<!--FAB-->
-			<div class="fixed-action-btn" data-target="modal1" style="bottom: 17px; right: 17px;" id="fab">
+			<div class="fixed-action-btn"  style="bottom: 17px; right: 17px;" id="fab">
 				<a class="btn-floating btn-large waves-effect waves-light" style="background-color:#4285f4">
 					<i class="material-icons">mode_edit</i>
 				</a>
 				
 				<ul>
-					<li><a class="btn-floating red" title="Overview" href="https://www.google.com" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
-					<li><a class="btn-floating yellow darken-1" title="Annoncement" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">error</i></a></li>
-					<li><a class="btn-floating green" title="Private message" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">forum</i></a></li>
-					<li><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
+					
+					<li data-target="modal1"><a class="btn-floating blue" title="Add task" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">launch</i></a></li>
 				</ul>
 			</div>
 			
@@ -196,14 +245,14 @@
 							
 							<!-- Modal info -->
 							<label>Select 1 or multiple classes to sent to</label>
-							<select class="browser-default">
+							<select multiple>
 								<option value="" disabled selected>Choose your option</option>
 								<option value="2P1">2P1</option>
 								<option value="2P2">2P2</option>
 								<option value="2P3">2P3</option>
 							</select>
 							<label>Select subject</label>
-							<select class="browser-default">
+							<select>
 								<option value="" disabled selected>Choose your option</option>
 								<option value="English">English</option>
 								<option value="Math ">Math</option>
@@ -317,20 +366,535 @@
 				</div>
 			</div>
 
-			<div id="modal2" class="modal">
+			
+            
+
+
+            <!-- 2P1 homework info -->
+			<div id="modal2P1" class="modal">
 				<div class="modal-content">
 					
 					<div class="row" style="background-color:#4285f4">
-						<div class="col s3 m5">
+						<div class="col s3 m9">
 							<div class="card white darken-1">
 								<div class="card-content black-text">
-									<span class="card-title">Homework by other subject teachers:</span>
+									<span class="card-title horizontal">Homework by other subject teachers:</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<p>English homework:</p>
-					<p> Chinese homework:</p>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#3F51B5 ">
+								<div class="card-content white-text ">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;" >English:</span>
+									<ol>
+									<li>English worksheet
+										
+									
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#002984">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                    
+
+                                    
+                                    </ol>
+                                </div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#00BCD4">
+								<div class="card-content white-text">
+									<span class="card-title horizontal " style=" font-size: 1.2rem;"">Math:</span>
+
+									<ol>
+									
+									<li>Math worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#008ba2">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#FF5722" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Mother Tongue:</span>
+
+									<ol>
+									
+									<li>华文作业
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#c41c00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#795548">
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style="font-size: 1.2rem;"">Science: </span>
+
+									<ol>
+									
+									<li>Science worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#4b2c20">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#33691E" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Geography:</span>
+
+									<ol>
+									
+									<li>Geog worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#003d00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					</div>
+					</div>
+
+					<!-- 2P2 homework info -->			
+
+					<div id="modal2P2" class="modal">
+				<div class="modal-content">
+					
+					<div class="row" style="background-color:#4285f4">
+						<div class="col s3 m9">
+							<div class="card white darken-1">
+								<div class="card-content black-text">
+									<span class="card-title horizontal">Homework by other subject teachers:</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#3F51B5 ">
+								<div class="card-content white-text ">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;" >English:</span>
+									<ol>
+									<li>English worksheet
+										
+									
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#002984">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                    
+
+                                    
+                                    </ol>
+                                </div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#00BCD4">
+								<div class="card-content white-text">
+									<span class="card-title horizontal " style=" font-size: 1.2rem;"">Math:</span>
+
+									<ol>
+									
+									<li>Math worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#008ba2">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#FF5722" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Mother Tongue:</span>
+
+									<ol>
+									
+									<li>华文作业
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#c41c00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#795548">
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style="font-size: 1.2rem;"">Science: </span>
+
+									<ol>
+									
+									<li>Science worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#4b2c20">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#33691E" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Geography:</span>
+
+									<ol>
+									
+									<li>Geog worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#003d00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					</div>
+					</div>
+
+
+
+
+				 <!-- 2P2 homework info -->			
+
+					<div id="modal2P3" class="modal">
+				<div class="modal-content">
+					
+					<div class="row" style="background-color:#4285f4">
+						<div class="col s3 m9">
+							<div class="card white darken-1">
+								<div class="card-content black-text">
+									<span class="card-title horizontal">Homework by other subject teachers:</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#3F51B5 ">
+								<div class="card-content white-text ">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;" >English:</span>
+									<ol>
+									<li>English worksheet
+										
+									
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#002984">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                    
+
+                                    
+                                    </ol>
+                                </div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#00BCD4">
+								<div class="card-content white-text">
+									<span class="card-title horizontal " style=" font-size: 1.2rem;"">Math:</span>
+
+									<ol>
+									
+									<li>Math worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#008ba2">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#FF5722" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Mother Tongue:</span>
+
+									<ol>
+									
+									<li>华文作业
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#c41c00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#795548">
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style="font-size: 1.2rem;"">Science: </span>
+
+									<ol>
+									
+									<li>Science worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#4b2c20">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+					
+					<p> <div class="row">
+						<div class="col 12 m4 l8">
+							<div class="rounded card" style="background-color:#33691E" >
+								<div class="card-content white-text">
+									<span class="card-title horizontal" style=" font-size: 1.2rem;"">Geography:</span>
+
+									<ol>
+									
+									<li>Geog worksheet
+									<div class="row">
+                                    <div class="col s12 m6">
+                                    <div class="card" style="background-color:#003d00">
+                                    <div class="card-content white-text">
+                                    <p>Sunbmission date:29/1/2017</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li>
+                                   
+                                    </ol>
+
+
+								</div>
+								</div>
+								</div>
+								</div>
+								</p>
+
+
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+							
+
+
+
+
+			
+					
+
+
+
+
+
 
 
 						

@@ -1,0 +1,31 @@
+.table {
+    border-collapse: collapse;
+}
+
+ .td,th {
+    border: 2px solid white;
+}
+t.h, td {
+    padding: 15px;
+   
+}
+.th {
+    background-color: #4285f4;
+    color: white;
+}
+
+
+.td {
+    background-color: #80b4ff;
+    color: white;
+}
+
+.fixedheight {
+    table-layout: fixed;
+}
+
+.fixedheight td {
+    height: 20px;
+    overflow: hidden;
+    width: 25%;
+}
