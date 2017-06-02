@@ -26,7 +26,8 @@
   </head>
   <body>
     <!-- Form-->
-    <form method="post" action="login.php">
+    <!-- Form Panel (Two)-->
+        <form method="post" action="signup.php">
     <div class="form" >
       <!-- Form Toggle-->
       <div class="form-toggle"></div>
@@ -34,39 +35,36 @@
       <div class="form-panel one">
         <!-- Form Header-->
         <div class="form-header">
-          <h1>Account Login</h1>
+          <h1>Account signup</h1>
         </div>
-        <!-- Form Content-->
-        <div class="form-content">
-          <form>
-            <!-- Form Group-->
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" name="username" name="username" required>
-            </div>
-            
-            <!-- Form Group-->
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" name="password" required>
-            </div>
-            <!-- Form Group-->
-            <div class="form-group">
-              <label class="form-remember">
-                <input type="checkbox">Remember Me
-                </label><a href="#" class="form-recovery">Forgot Password?</a>
+          <!-- Form Content-->
+          <div class="form-content">
+            <form>
+              <!-- Form Group-->
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" name="username" required>
               </div>
               <!-- Form Group-->
               <div class="form-group">
-                <button type="submit">Log In</button>
+                <label for="password">Password</label>
+                <input type="password" name="password" name="password" required>
+              </div>
+              <!-- Form Group-->
+              
+              <!-- Form Group-->
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" name="email" required>
+              </div>
+              <!-- Form Group-->
+              <div class="form-group">
+                <button type="submit">Register</button>
               </div>
             </form>
           </div>
         </div>
-        
-
-
-        
+      </div>
       <!-- Scripts-->
       <script src="assets/js/jquery-2.1.4.min.js"></script>
       <script src="assets/js/script.js"></script>
